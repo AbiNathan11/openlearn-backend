@@ -20,6 +20,7 @@ const app = express();
 app.use(cors({
     origin: [
         "http://localhost:5173",
+        "https://openlearn-frontend.vercel.app",
         process.env.FRONTEND_URL,
         process.env.CLIENT_URL,
     ].filter(Boolean),
